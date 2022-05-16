@@ -1,0 +1,4 @@
+Git: Skipping The Staging Area | Git Tutorials #9
+
+
+// sometimes we have some modification made to files but for some reson we cant stage it (May be undone work etc.) so to save the work flow we can skip the staging and directly commit it
