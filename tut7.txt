@@ -1,0 +1,6 @@
+// Ignoring files to be staged
+// some log files are generated during programming we dont need to keep track on them so we ignore it whie staging
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ touch mani.txt                                                                     //we have made a file 
+
