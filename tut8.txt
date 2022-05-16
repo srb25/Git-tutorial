@@ -1,0 +1,63 @@
+// Git diff: Showing Changes Between Commits/Staging Area & Working Directory | Git Tutorials #8
+// if after a commit a file has been modified and then staged, there is a difference between the staged file and the last modification 
+// git diff shows the difference between the staged file and the new modification 
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tut7.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git add tut7.txt
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git diff
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git diff
+diff --git a/tut7.txt b/tut7.txt
+index 1f2a8ad..6ad3ddb 100644
+--- a/tut7.txt
++++ b/tut7.txt
+@@ -39,7 +39,7 @@ Changes to be committed:
+         new file:   .gitignore
+
+ //commit
+-Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
++Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master) // one more file has been added not to be confused
+ $ git commit -m "commit after adding GITIGNORE"
+ [master 88ead34] commit after adding GITIGNORE
+  2 files changed, 7 insertions(+)
+
+// git diff compares the staging area and the workibg directory
+// it can also compare the last commit vs the staging area
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git diff --staged
+diff --git a/tut7.txt b/tut7.txt
+index d1e6e91..6ad3ddb 100644
+--- a/tut7.txt
++++ b/tut7.txt
+@@ -4,3 +4,49 @@
+ Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+ $ touch mani.txt                                                                     //we have made a file
+
++Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
++$ git status
++On branch master
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++        mani.txt
++
++nothing added to commit but untracked files present (use "git add" to track)           // we need to ignore mani.txt while staging
++
++// we will create a .gitignore file and enter the name of the files we want to ignore
++Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
++$ touch .gitignore                                                             :
+                                                                                          // press q to quit from this
+

@@ -4,3 +4,55 @@
 Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
 $ touch mani.txt                                                                     //we have made a file 
 
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mani.txt
+
+nothing added to commit but untracked files present (use "git add" to track)           // we need to ignore mani.txt while staging
+
+// we will create a .gitignore file and enter the name of the files we want to ignore 
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ touch .gitignore                                                                         //now open the file in the respective folder and add the file names to be ignored
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+      
+
+nothing added to commit but untracked files present (use "git add" to track)            // the file is ignored and wont be staged
+
+// now we stage the files
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git add .                                                                            //adding all files to stage
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+//commit
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master) // one more file has been added not to be confused
+$ git commit -m "commit after adding GITIGNORE"
+[master 88ead34] commit after adding GITIGNORE
+ 2 files changed, 7 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 tut7.txt
+
+
+
+
+
+
+//https://www.youtube.com/watch?v=TwKALVoK5cE&list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi&index=7&ab_channel=CodeWithHarry
+
+
+
+
