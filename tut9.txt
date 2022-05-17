@@ -2,3 +2,51 @@ Git: Skipping The Staging Area | Git Tutorials #9
 
 
 // sometimes we have some modification made to files but for some reson we cant stage it (May be undone work etc.) so to save the work flow we can skip the staging and directly commit it
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean                                          // repository is commited clean
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tut9.txt                                                   // changes made to a file
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ touch secondMANI.txt                                                         // new file is added
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tut9.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        secondMANI.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git commit -a -m "Direct Commit without staging"                                   //repos is directly commited not staged
+[master fa977e9] Direct Commit without staging
+ 1 file changed, 4 insertions(+)
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        secondMANI.txt                                                              // Untracked files still shows as it is not staged and this wont go to commit
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$
