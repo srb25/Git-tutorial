@@ -1,0 +1,10 @@
+Unstaging & Unmodifying Files In Git | Git Tutorials #12
+
+git restore --staged <file name> :- Unstage file which are not commited
+
+
+//if we mistakenly change something from a file we can restore the file to its previous version and unmodify it 
+git checkout -- <file name>       
+git checkout -f          // simply rollback to the last commit 
+// we should be careful using this as we will lose all progress made after using this command
+

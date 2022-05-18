@@ -1,3 +1,28 @@
 Git Log: Viewing & Changing Commits In Git | Git Tutorials #11
 
+
 https://www.youtube.com/watch?v=Hxn3OguEMd4&list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi&index=11&ab_channel=CodeWithHarry
+https://www.youtube.com/watch?v=Hxn3OguEMd4&list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi&index=11&ab_channel=CodeWithHarry
+
+git log :- to the logs (all commit history)
+git log -p :- to show the detailed logs
+git log -p -<number of log we want to see>
+git log --stat :- log summary
+git log --pretty=oneline :- one line log data
+git log --pretty=short :-undetailed log data (date,commit)
+git log p--pretty=full :-3 point details of log data (date,author,commit)
+
+//author is someone who make the  file , Commit name is the one who has modifiedthe file
+
+//time filter for logs
+git log --since=2.days :- shows the last 2 days work log
+git log --since=2.<months/weeks/year> :- same as previous
+
+git log --pretty=format: "%h -- %an" :- (%h-> abbrevieated hash commit -- %an->author name)
+https://git-scm.com/docs/pretty-formats
+
+//git ammend
+if we want to merge our own commit with a made up commit we use ammend
+git commit --ammend            // This will open a VIM editor where we will edit the already done commit 
+press i to insert ,
+Esc+:+w+q -> save and exit ( Just like the VI editor in LINUX)
