@@ -1,0 +1,36 @@
+GitHub: Working with Remote Repositories | Git Tutorials #13
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git remote                                                                 // check if there is any remote repository 
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$
+
+// nothing happened so no remote repos  exist
+
+// go to github.com , and make a new repositary, then in the lower section ( to push an existing repository section) copy the 1st line of code and paste it the git bash
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git remote add origin https://github.com/Tejasmaya/Git-tutorial.git     // Commonly any new remote repos name is origin but we can change it 
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git remote                                                                // check for remote repos :- origin exist
+origin
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$ git remote -v                                                              // This command shows two URL to pull or push data Systems Associate role
+origin  https://github.com/Tejasmaya/Git-tutorial.git (fetch)
+origin  https://github.com/Tejasmaya/Git-tutorial.git (push)
+
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (master)
+$
+Tejasmaya Sitha@DESKTOP-5AV82N1 MINGW64 ~/OneDrive/Desktop/newgit (main)
+$ git push -u origin main                                                     // if we try to push files directly now we would see error as we dont have access to use the file 
+fatal: unable to access 'https://github.com/Tejasmaya/Git-tutorial.git/': Could not resolve host: github.com
+
+// to give access to all files in our account go to account settings>SSH and GPG keys >add new ssh keys (Go to ssh key github (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) )
+
+
