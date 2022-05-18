@@ -1,0 +1,11 @@
+Moving and Renaming Files In Git | Git Tutorials #10
+
+// If we rename the filename in the folder outside git bash then in the bash , git thinks the file got deleted and a new file has been added , but after the file goes to the staging area again git gets to know the file name has been renamed
+// If we remove a file from the repos through git bash (git rm <file name>) then git git deletes the file along with it also stages the current state of repos
+// git mv <file name > <new file name> :- to rename the file name of a file // This also stage the repos automatically
+
+
+// If a file has been tracked since start and we add the file name to .gitignore then too the file will be tracked further unless we explicitly remove it from the staging area
+// to remove file from staging area :- git rm --cached <filename>
+// now if we check the status , git would show us that file has been deleted , but in real the file has not been deleted it has just been untracked
+
